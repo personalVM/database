@@ -30,18 +30,18 @@ services:
     networks:
       - dockernetw
 
-#   util:
-#     container_name: util
-#     build:
-#       context: ./util
-#       dockerfile: util.Dockerfile
-#     restart: no
-#     volumes:
-#       - /var/run/docker.sock:/var/run/docker.sock
-#     depends_on:
-#       - geoserver
-#     networks:
-#       - dockernetw
+  util:
+    container_name: util
+    build:
+      context: ./util
+      dockerfile: util.Dockerfile
+    restart: no
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - geoserver
+    networks:
+      - dockernetw
 
 networks:
   dockernetw:
