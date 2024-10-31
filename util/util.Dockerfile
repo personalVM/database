@@ -14,7 +14,7 @@ RUN apt install postgresql-client -y
 RUN apt install python3 -y
 ### RUN pip install --upgrade pip --break-system-packages
 COPY /init/requirements.txt /init/requirements.txt
-RUN pip install -r init/requirements.txt 
+RUN pip install --break-system-packages -r init/requirements.txt 
 # --break-system-packages
 COPY /init/ /init
 # COPY /gdfe/ /gdfe
