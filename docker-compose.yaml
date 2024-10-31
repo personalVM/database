@@ -9,8 +9,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_USER=guigo
-      - POSTGRES_PASSWORD=passwd
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     networks:
       - dockernetw
 
