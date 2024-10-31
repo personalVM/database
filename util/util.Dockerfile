@@ -15,7 +15,7 @@ RUN pip install --upgrade pip --break-system-packages
 COPY /init/requirements.txt /init/requirements.txt
 RUN pip install -r init/requirements.txt --break-system-packages
 COPY /init/ /init
-COPY /gdfe/ /gdfe
+# COPY /gdfe/ /gdfe
 RUN chmod +x init/init.sh
 RUN ls -a
 
