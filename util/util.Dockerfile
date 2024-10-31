@@ -8,7 +8,7 @@ RUN apt update -y
 RUN apt install -y gdal-bin libgdal-dev
 RUN apt install python3-pip -y
 RUN apt install postgresql-client -y
-RUN pip install --upgrade pip 
+RUN pip install --upgrade pip --force-reinstall
 # --break-system-packages
 # RUN apt install python3-full -y
 RUN apt install python3 -y
