@@ -23,7 +23,7 @@ wait_for_container_to_exit() {
 }
 
 echo "Waiting for container {etl} to exit before moving to the next commands:"
-wait_for_container_to_exit "geoserver"
+# wait_for_container_to_exit "etl"
 
 echo "Inserting tables into PostgreSQL:"
 docker exec -i database psql -U user -d mydb < "./init/create_table_cities_ivebeen.sql"
