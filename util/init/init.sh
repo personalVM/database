@@ -26,7 +26,7 @@ echo "Waiting for container {etl} to exit before moving to the next commands:"
 # wait_for_container_to_exit "etl"
 
 echo "Inserting tables into PostgreSQL:"
-docker exec -i postgres psql -U user -d mydb < "./init/create_table_cities_ivebeen.sql"
+docker exec -i postgres psql -U guigo -d mydb < "./init/create_table_cities_ivebeen.sql"
 # docker exec -i database psql -U user -d mydb < "./init/create_table_geopoints.sql"
 # docker exec -i database psql -U user -d mydb < "./init/create_table_teste.sql"
 
