@@ -30,7 +30,7 @@ echo "Inserting tables into PostgreSQL:"
 echo $(pwd)
 echo $(ls -a)
 
-sudo docker exec -i postgres psql -U guigo -d mydb < "./util/init/create_table_cities_ivebeen.sql"
+sudo docker exec -i postgres psql -U guigo -d mydb < "./database/util/init/create_table_cities_ivebeen.sql"
 # docker exec -i database psql -U user -d mydb < "./init/create_table_geopoints.sql"
 # docker exec -i database psql -U user -d mydb < "./init/create_table_teste.sql"
 
