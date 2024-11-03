@@ -19,7 +19,7 @@ RUN pip install --break-system-packages -r init/requirements.txt
 COPY /init/ /init
 # COPY /gdfe/ /gdfe
 RUN chmod +x init/init.sh
-RUN ls -a
+# RUN ls -a
 
 CMD ["sh", "init/init.sh"]
 
